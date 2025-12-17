@@ -1,13 +1,24 @@
 # LAZV Chain
 
-LAZV Chain is an experimental, open-source blockchain project.
+LAZV Chain is an open-source blockchain project in early development.
 
-- No premine
-- No private wallet held
-- Community-driven
+This repository provides a **reference node implementation**
+for developers and community members.
 
-This repository contains a reference node implementation
-for development and educational purposes.
+⚠️ Important:
+- This is NOT a production mainnet
+- This is NOT a financial product
+- No guarantees, no promises
 
-Run:
-python node.py
+Features:
+- Basic blockchain
+- Peer-to-peer networking
+- Native token model (experimental)
+
+Anyone can:
+- Run a node locally
+- Extend the code
+- Participate in development
+
+Vision:
+Community-led blockchain, built step by step.
