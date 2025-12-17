@@ -22,3 +22,9 @@ Anyone can:
 
 Vision:
 Community-led blockchain, built step by step.
+## Peer Networking
+
+You can connect nodes manually
+by adding peer addresses using /add_peer endpoint.
+
+This network is permissionless.
