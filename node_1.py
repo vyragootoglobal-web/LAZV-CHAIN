@@ -1,12 +1,18 @@
-from p2p import P2PNetwork
-network = P2PNetwork()
-@app.route('/add_peer', methods=['POST'])
-def add_peer():
-    peer = request.json['peer']
-    network.add_peer(peer)
-    return jsonify({"message": "Peer added"})
-    @app.route('/receive_block', methods=['POST'])
-def receive_block():
-    block_data = request.json
-    blockchain.chain.append(type('Block', (), block_data))
-    return jsonify({"message": "Block received"})
+from flask import Flask, jsonify, request
+from blockchain import Blockchain
+
+app = Flask(__name__)
+blockchain = Blockchain()
+
+@app.route('/chain', methods=['GET'])
+def get_chain():
+    return jsonify([block.__dict__ for block in blockchain.chain])
+
+@app.route('/mine', methods=['POST'])
+def mine_block():
+    data = request.json.get("data", "empty")
+    blockchain.add_block(data)
+    return jsonify({"message": "Block added", "data": data})
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
