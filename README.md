@@ -28,3 +28,23 @@ You can connect nodes manually
 by adding peer addresses using /add_peer endpoint.
 
 This network is permissionless.
+
+# LAZV Chain - Community Node
+
+🔥 LAZV Chain is a **global multi-node blockchain network**:
+
+- Anti-Quantum Hybrid Signatures
+- Multi-node P2P (HP/Termux, PC, Server)
+- Polygon token bridge ready
+- Block producer & heartbeat built-in
+- Termux/PC ready
+- Auto peer discovery & sync
+
+---
+
+## 1️⃣ Install (Termux / Linux / PC)
+
+**1-liner installer**:
+
+```bash
+curl -s https://yourserver.com/install_lazv.sh | bash
