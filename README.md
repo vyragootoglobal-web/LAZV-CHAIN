@@ -266,11 +266,5 @@ LAZV kebalik:
 - pelan
 - hidup
 
-Dan **itu justru yang bikin builder dunia berhenti, baca, lalu join.**
-
-Kalau mau, next gue bisa:
-- bikinin **repo structure final**
-- atau **versi super-clean 1 file**
-- atau **narasi “why this survived 3 years”**
-
-Tinggal bilang aja. 🔥
+You are expected to run your own node.
+This project does not depend on a central server.
