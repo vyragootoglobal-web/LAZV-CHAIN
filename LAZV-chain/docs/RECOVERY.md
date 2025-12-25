@@ -1,10 +1,10 @@
-# LAZV Chain Recovery
+## Recovery Logic
 
 If all nodes disappear:
 
-1. Read last Polygon checkpoint
-2. Extract height + hash
-3. Start new seed node
-4. Continue chain from last valid state
+- Polygon checkpoint defines last public truth
+- Any builder may restart the chain
+- No permission required
+- Forking allowed
 
-LAZV is designed to survive maintainer absence.
+LAZV survives through code, not people.
