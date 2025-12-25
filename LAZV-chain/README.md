@@ -1,6 +1,9 @@
-# LAZV Chain
+## If the Maintainer Disappears
 
-LAZV is an independent, community-sovereign blockchain.
+LAZV is designed to survive.
 
-Polygon is used only as a public checkpoint layer.
-Polygon is NOT required for LAZV to run.
+- Anyone may run a seed node
+- Valid chain = longest valid chain + Polygon checkpoints
+- Forking is allowed if repository is abandoned
+
+This is intentional.
