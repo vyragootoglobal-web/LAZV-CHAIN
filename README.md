@@ -17,3 +17,14 @@ LAZV is designed to survive.
 - Forking is allowed if repository is abandoned
 
 This is intentional.
+
+
+LAZV-chain/
+├─ core/        # Sovereign logic
+├─ node/        # Network & nodes
+├─ polygon/     # Anchor & recovery
+├─ explorer/    # Read-only
+├─ docs/        # Survival manuals
+├─ README.md
+├─ MANIFESTO.md
+└─ LICENSE
