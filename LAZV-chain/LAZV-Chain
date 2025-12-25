@@ -1,0 +1,28 @@
+LAZV-chain/
+│
+├─ core/                     # Pure blockchain logic (sovereign)
+│   ├─ block.py              # Block structure
+│   ├─ blockchain.py         # Chain rules, validation, height
+│   └─ token.py              # Native LAZV coin logic
+│
+├─ node/                     # Network layer
+│   ├─ seed_node.py          # Full node / producer
+│   ├─ light_node.py         # HP / low resource node
+│   └─ p2p.py                # Peer discovery & sync
+│
+├─ polygon/                  # Anchor layer (NOT dependency)
+│   ├─ config.py             # Polygon RPC, chainId
+│   ├─ polygon_rpc.py        # Low-level RPC sender
+│   └─ checkpoint.py         # Send LAZV block hash to Polygon
+│
+├─ explorer/                 # Read-only tools
+│   └─ explorer.html
+│
+├─ docs/
+│   ├─ RUN_NODE.md           # How to run seed/light node
+│   ├─ GOVERNANCE.md         # Community rules
+│   └─ RECOVERY.md           # If all nodes die
+│
+├─ README.md                 # Global intro
+├─ MANIFESTO.md              # Philosophy (important)
+└─ LICENSE                   # MIT
