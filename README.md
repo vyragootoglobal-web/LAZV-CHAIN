@@ -1,5 +1,8 @@
 # LAZV Chain
 
+LAZV is not a startup.
+It is a protocol designed to outlive its creator.
+
 LAZV is a sovereign blockchain anchored to Polygon for public checkpointing.
 
 Polygon is used only for:
