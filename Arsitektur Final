@@ -1,0 +1,25 @@
+┌─────────────────────────┐
+           │        Polygon           │
+           │  (Public Checkpoint)     │
+           │  - block height          │
+           │  - block hash            │
+           └──────────┬──────────────┘
+                      │
+          checkpoint proof (public truth)
+                      │
+┌─────────────────────▼─────────────────────┐
+│                LAZV CHAIN                  │
+│  ┌──────────────┐   ┌──────────────────┐ │
+│  │ Seed Node(s) │◀─▶│   P2P Network     │ │
+│  └──────────────┘   └──────────────────┘ │
+│          │                                   │
+│          ▼                                   │
+│     Produce Blocks                           │
+│     Validate Chain                           │
+│                                             │
+│  ┌──────────────────────────────────────┐  │
+│  │ Light Node (HP / Low Resource)        │  │
+│  │ - Reads Polygon if peers are gone     │  │
+│  │ - Knows last valid chain state        │  │
+│  └──────────────────────────────────────┘  │
+└─────────────────────────────────────────────┘
