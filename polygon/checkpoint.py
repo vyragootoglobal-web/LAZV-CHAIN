@@ -1,17 +1,20 @@
-from polygon.polygon_rpc import send_rpc
+import json
 from polygon.config import CHAIN_ID
 
-def send_checkpoint(block):
-    data = {
+def encode_checkpoint(block):
+    payload = {
         "chain": CHAIN_ID,
         "height": block.height,
         "hash": block.hash,
         "timestamp": block.timestamp
     }
-    print("📌 Polygon checkpoint:", data)
-    # FUTURE: encode this data into a Polygon transaction memo field
-    return data
+    return json.dumps(payload)
 
-def read_last_checkpoint():
-    # placeholder for future indexer / Chain data lookup
-    return None
+def send_checkpoint(block):
+    data = encode_checkpoint(block)
+    print("📌 Polygon Checkpoint Payload:")
+    print(data)
+
+    # NEXT STEP (optional):
+    # sign tx
+    # send tx with data field
