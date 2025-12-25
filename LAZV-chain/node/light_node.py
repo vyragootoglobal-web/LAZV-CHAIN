@@ -1,9 +1,7 @@
-from polygon.checkpoint import read_last_checkpoint
+from polygon.indexer import get_last_checkpoint
 
 print("📱 LAZV Light Node")
 
-checkpoint = read_last_checkpoint()
-if checkpoint:
-    print("Last known chain state:", checkpoint)
-else:
-    print("No checkpoint found. Waiting for peers.")
+checkpoint = get_last_checkpoint()
+print("🔎 Public checkpoint:", checkpoint)
+print("ℹ️ Chain can be recovered from this state.")
